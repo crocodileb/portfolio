@@ -736,7 +736,7 @@ textarea {
 	height: 150px;
 }	
 
-.send {
+input.send {
 	background-color: #18bc9c;
 	float: left;
 	width: 80px;
@@ -745,15 +745,13 @@ textarea {
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
-	border:none;
-	outline: none;
 }
 
-/*input.send:active {
+input.send:active {
 	margin: 1px 1px 31px 1px;
 	width: 78px;
 	height: 46px;
-}*/
+}
 
 .contact__telegram {
 	display: flex;
