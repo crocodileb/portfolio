@@ -5,11 +5,10 @@
 	<title>Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet"  href="style.css">
-	<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="favicon.svg" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 	<meta name = "referrer" content = "origin">
-
+	<script src="https://kit.fontawesome.com/56195b158c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -47,23 +46,23 @@
 				
 					<ul class="menu">
 						<li>
-						<a class="scrollto" href="#portfolio">Portfolio</a>
+						<a class="scrollto trans" key="portfolio" href="#portfolio">Portfolio</a>
 						</li>
 
 						<li>
-						<a class="scrollto" href="#about">About</a>
+						<a class="scrollto trans" key="about" href="#about">About</a>
 						</li>
 
 						<li>
-						<a class="scrollto" href="#contact">Contact</a>
+						<a class="scrollto trans" key="contact" href="#contact">Contact</a>
 						</li>	
 
 					</ul>
 
 					<ul class="lang">
-						<li><button class="ru"><img src="../img/ru.svg" alt="ru"></button></li>
-						<li><button class="ua"><img src="../img/ua.svg" alt="ua"></button></li>
-						<li><button class="eng"><img src="../img/eng.svg" alt="eng"></button></li>
+						<li><button id="ru" class="ru translate"><img src="../img/ru.svg" alt="ru"></button></li>
+						<li><button id="ua" class="ua translate"><img src="../img/ua.svg" alt="ua"></button></li>
+						<li><button id="en" class="eng translate"><img src="../img/eng.svg" alt="eng"></button></li>
 					</ul>	
 
 					<div class="lang-over">
@@ -78,7 +77,7 @@
 				<div class="part-one">
 					<div class="photo">
 						<img src="../img/face.png" alt="">
-						<h2 class="photo__title">Антон Демченко</h2>
+						<h2 class="photo__title">Меня зовут <br> Антон Демченко</h2>
 					</div>
 					<p class="preview__text">Добро пожаловать на <br> мой сайт-портфолио!</p>
 				</div>
@@ -252,7 +251,7 @@
 				</div>
 			
 				<div class="contact__content">
-					<form class="form" action="https://formspree.io/f/mnqljkbv" method="POST">
+					<form class="form" action="https://formspree.io/f/mnqljkbv" method="post">
 								
 						<input placeholder="Name" type="text" name="name" />
 						<input placeholder="Email" type="email" name="email" />
