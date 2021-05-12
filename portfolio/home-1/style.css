@@ -232,6 +232,7 @@ section {
 
 .photo__title {
 	color: #234F59 ;
+	text-align: center;
 }
 
 .preview__text {
@@ -400,7 +401,7 @@ section {
 }
 
 .slider__item__hover button {
-	display: none;
+	display: flex;
 	cursor: pointer;
 	background-color: rgba(0,0,0,0);
 	border:none;
@@ -745,6 +746,7 @@ input.send {
 	border-radius: 10px;
 	color: white;
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 
 input.send:active {
@@ -1093,6 +1095,10 @@ footer {
 	}
 
 	body.lock {
-	overflow: hidden;
+		overflow: hidden;
+	}
+
+	input:active .menu {
+		display: none;
 	}
 }	
